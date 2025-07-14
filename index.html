@@ -17,6 +17,8 @@
     />
     <!-- підключення моєї таблиці стилів -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Підключення налаштуваннь для визначення viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title hidden>Webstudio's site</title>
   </head>
   <body>
@@ -46,6 +48,71 @@
             </li>
           </ul>
         </address>
+        <button class="mobil-menu-button" data-mobile-menu-open>
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobil-menu" data-mobile-menu-modal>
+        <div class="mobil-menu-wraper">
+          <button class="mobil-menu-close-button" data-mobile-menu-close>
+            <svg class="icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-header-navigation">
+            <ul class="nav-links-container">
+              <li><a class="nav-link active" href="./index.html">Studio</a></li>
+              <li><a class="nav-link" href="">Portfolio</a></li>
+              <li><a class="nav-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="address-links-container">
+              <li>
+                <a class="address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="media-container">
+            <li class="media-item">
+              <a class="media-link" href="" target="_blank">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a class="media-link" href="" target="_blank">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a class="media-link" href="" target="_blank">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a class="media-link">
+                <svg class="media-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -123,10 +190,10 @@
           <ul class="third-section-cards-container">
             <li class="third-section-cards">
               <img
-                src="./images/img1.jpg"
+                class="third-section-card-image"
+                srcset="./images/img1@1x.jpg 1x, ./images/img1@2x.jpg 2x"
+                src="./images/img1@1x.jpg"
                 alt="Mark Guerrero"
-                width="264"
-                height="260"
               />
               <div class="third-section-name-occupation">
                 <h3 class="third-section-cards-title">Mark Guerrero</h3>
@@ -165,10 +232,10 @@
             </li>
             <li class="third-section-cards">
               <img
-                src="./images/img2.jpg"
+                class="third-section-card-image"
+                srcset="./images/img2@1x.jpg 1x, ./images/img2@2x.jpg 2x"
+                src="./images/img2@1x.jpg"
                 alt="Tom Ford"
-                width="264"
-                height="260"
               />
               <div class="third-section-name-occupation">
                 <h3 class="third-section-cards-title">Tom Ford</h3>
@@ -207,10 +274,10 @@
             </li>
             <li class="third-section-cards">
               <img
-                src="./images/img3.jpg"
+                class="third-section-card-image"
+                srcset="./images/img3@1x.jpg 1x, ./images/img3@2x.jpg 2x"
+                src="./images/img3@1x.jpg"
                 alt="Camila Garcia"
-                width="264"
-                height="260"
               />
               <div class="third-section-name-occupation">
                 <h3 class="third-section-cards-title">Camila Garcia</h3>
@@ -249,10 +316,10 @@
             </li>
             <li class="third-section-cards">
               <img
-                src="./images/img4.jpg"
+                class="third-section-card-image"
+                srcset="./images/img4@1x.jpg 1x, ./images/img4@2x.jpg 2x"
+                src="./images/img4@1x.jpg"
                 alt="Daniel Wilson"
-                width="264"
-                height="260"
               />
               <div class="third-section-name-occupation">
                 <h3 class="third-section-cards-title">Daniel Wilson</h3>
@@ -300,9 +367,13 @@
             <li class="fourth-section-cads">
               <div class="card-thumb">
                 <img
-                  src="./images/bankingApp.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/bankingApp@1x.jpg 1x,
+                    ./images/bankingApp@2x.jpg 2x
+                  "
+                  src="./images/bankingApp@1x.jpg"
                   alt="Banking App"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -318,9 +389,13 @@
             <li class="fourth-section-cads">
               <div class="card-thumb">
                 <img
-                  src="./images/cashlessPayment.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/cashlessPayment@1x.jpg 1x,
+                    ./images/cashlessPayment@2x.jpg 2x
+                  "
+                  src="./images/cashlessPayment@1x.jpg"
                   alt="Cashless Payment"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -336,9 +411,13 @@
             <li class="fourth-section-cads">
               <div class="card-thumb">
                 <img
-                  src="./images/meditationApp.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/meditationApp@1x.jpg 1x,
+                    ./images/meditationApp@2x.jpg 2x
+                  "
+                  src="./images/meditationApp@1x.jpg"
                   alt="Meditation App"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -354,9 +433,13 @@
             <li class="fourth-section-cads">
               <div class="card-thumb">
                 <img
-                  src="./images/taxiService.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/taxiService@1x.jpg 1x,
+                    ./images/taxiService@2x.jpg 2x
+                  "
+                  src="./images/taxiService@1x.jpg"
                   alt="Taxi Service"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -372,9 +455,13 @@
             <li class="fourth-section-cads">
               <div class="card-thumb">
                 <img
-                  src="./images/screenIllustrations.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/screenIllustrations@1x.jpg 1x,
+                    ./images/screenIllustrations@2x.jpg 2x
+                  "
+                  src="./images/screenIllustrations@1x.jpg"
                   alt="Screen Illustrations"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -390,9 +477,13 @@
             <li class="fourth-section-cads">
               <div class="card-thumb">
                 <img
-                  src="./images/onlineCourses.jpg"
+                  class="fourth-section-cads-foto"
+                  srcset="
+                    ./images/onlineCourses@1x.jpg 1x,
+                    ./images/onlineCourses@2x.jpg 2x
+                  "
+                  src="./images/onlineCourses@1x.jpg"
                   alt="Online Courses"
-                  width="360"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -421,9 +512,9 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="social-media">
+        <div class="social-media-container">
           <p class="social-media-title">Social media</p>
-          <ul class="social-media-container">
+          <ul class="social-media-links-container">
             <li class="media-item">
               <a class="social-media-link" href="">
                 <svg class="social-media-icon" width="24" height="24">
@@ -552,9 +643,11 @@
                 <svg class="checkmark-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkmark"></use></svg
               ></span>
-              I accept the terms and conditions of the
-              <a class="privacy-link">Privacy Policy</a></label
-            >
+              <span class="checkbox-text">
+                I accept the terms and conditions of the
+                <a class="privacy-link">Privacy Policy</a>
+              </span>
+            </label>
           </div>
           <button class="form-send-button" type="button">Send</button>
         </form>
