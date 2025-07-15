@@ -541,11 +541,14 @@ button {
   /* footer styles */
   .footer {
     padding: 96px 16px;
+    background-color: #2e2f42;
+  }
+
+  .footer .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 72px;
-    background-color: #2e2f42;
   }
 
   .logo-container {
@@ -1416,12 +1419,15 @@ button {
 
   /* footer styles */
   .footer {
+    background-color: #2e2f42;
+    padding: 96px 108px;
+  }
+
+  .footer .container {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     gap: 24px;
-    background-color: #2e2f42;
-    padding: 96px 108px;
   }
 
   .footer .site-logo {
@@ -1859,7 +1865,7 @@ button {
 
   .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 16px;
   }
@@ -2007,7 +2013,8 @@ button {
 
   /* second section styles */
   .second-section {
-    padding: 120px 156px;
+    /* за вирахуванням 16см від контейнеру */
+    padding: 120px 0;
   }
 
   .second-section-content-container {
@@ -2040,7 +2047,7 @@ button {
   }
 
   .second-section-content-item {
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    flex-basis: calc((100% - (3 * 24px)) / 4);
   }
 
   .second-section-content-item .icon-container {
@@ -2077,7 +2084,7 @@ button {
   /* third section styles */
   .third-section {
     background-color: #f4f4fd;
-    padding: 120px 156px;
+    padding: 120px 0;
   }
 
   .third-section-title {
@@ -2170,7 +2177,7 @@ button {
 
   /* fourth section styles */
   .fourth-section {
-    padding: 120px 156px;
+    padding: 120px 0;
   }
 
   .fourth-section-title {
@@ -2262,13 +2269,18 @@ button {
 
   /* footer styles */
   .footer {
+    background-color: #2e2f42;
+    padding: 100px 0;
+  }
+
+  .footer .container {
     display: flex;
     align-items: baseline;
-    background-color: #2e2f42;
-    padding: 100px 156px;
   }
 
   .footer .logo-container {
+    width: 264px;
+    flex-shrink: 0;
     margin-right: 120px;
   }
 
@@ -2285,8 +2297,6 @@ button {
     color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.32px;
-
-    max-width: 264px;
   }
 
   /* social-media section*/
@@ -2332,6 +2342,10 @@ button {
 
   /* Subscribe section */
   .subscribe-conteiner {
+    max-width: 483px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-left: 80px;
   }
 
