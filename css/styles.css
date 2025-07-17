@@ -1117,6 +1117,10 @@ transform: translate(-50%, -50%) scale(1);
   }
 
   /* second section styles */
+  .second-section .container {
+    padding: 0;
+  }
+
   .second-section-content-container {
     flex-direction: column;
     row-gap: 72px;
