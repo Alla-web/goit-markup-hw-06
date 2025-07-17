@@ -421,6 +421,7 @@ button {
 
 /* fourth-section section styles */
 .fourth-section {
+  margin: 0 auto;
   padding: 96px 16px;
 }
 
@@ -1156,7 +1157,7 @@ transform: translate(-50%, -50%) scale(1);
   }
 
   .fourth-section-cads {
-    max-width: 100%;
+    max-width: 288px;
   }
 
   .fourth-section-cads-foto {
