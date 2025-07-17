@@ -209,7 +209,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg); /* ефект заблуреного фото*/
+    url(../images/people-office-mobile@1x.jpg); /* ефект заблуреного фото*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1442,7 +1442,7 @@ transform: translate(-50%, -50%) scale(1);
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg); /* ефект заблуреного фото*/
+      url(../images/people-office@1x.jpg); /* ефект заблуреного фото*/
   }
 
   .first-section-container {
@@ -1596,5 +1596,35 @@ transform: translate(-50%, -50%) scale(1);
   .checkbox-text {
     width: 100%;
     display: inline-block;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .first-section {
+    background-image: linear-grdient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) and (screen-resolution: 192dpi) {
+  .first-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
   }
 }
